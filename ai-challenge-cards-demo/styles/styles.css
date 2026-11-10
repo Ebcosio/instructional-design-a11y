@@ -1,0 +1,633 @@
+ 
+       .hiddenDRG { 
+          display: none
+         }
+    
+       .flcc-blue-bg { 
+           background-color: #1e90ff;
+       }
+       /* FCC rule
+       .modal-content {
+           border-radius: 15px;
+           height: 90vh;
+       }
+       */
+       /*      MCC rule       */
+       .modal-content {
+       border-radius: 15px;
+        }
+       .h1-DRG {
+           font-family: Comfortaa, Lato, Rubik, sans-serif;
+       }
+       
+       .lead {
+           font-family: Comfortaa, Lato, Rubik, sans-serif !important;
+       }
+    
+        li {
+            margin-bottom: 0px;
+        }
+        
+        ol li {
+            margin-bottom: 10px;
+        }
+
+
+        body {
+            font-family: Comfortaa, sans-serif;
+        }        
+        /* MCC header rules */
+        header.header {
+             height: auto;
+              display: flex;
+            flex-direction: column;
+            background-color: #004B8D;
+             background-image:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0));
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            /*margin-top: -200px;*/
+            z-index: 10000;
+            text-align: center;
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            /*flex-direction: column;            */
+        }
+        
+        .section-title {
+            font-family: Comfortaa, sans-serif;
+        }
+        
+      
+        /*
+        .header-image-container {
+            background-color: white;
+            width: 100%;
+            text-align: center;
+        }
+*/
+            .header-image-container {
+                height: 7.5rem;
+            background: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center
+
+            }
+            /* MCC Challenge header and title rules 
+                .header .challenge-header {
+                min-height: 12rem;     
+                }
+                */
+         .challenge-header > .challenge-page-title{
+            background: #E3B020; color: black; margin-bottom: 0;
+         }
+         h1.challenge-page-title.modal-title{
+            /* alternatve title will display only inside of modal element */
+            display: none; 
+            color: black; 
+            text-align: center;
+            background: #E3B020;
+        }
+        .header-logo {
+            /*margin: 10px;*/
+            padding-top: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+         /*   background-color: white;*/
+            /*border-radius: 10px;*/
+            padding-bottom: 3px;
+            height: 72px;
+            /*border-radius: 0px 5px 5px 0px;*/
+        }
+        
+        .main-container {
+            padding-top: 78px;
+            width: 100%;
+            /*background-color: red;*/
+        }
+        /*  MCC Challeng page main area and heading */
+        main.challenge-main {
+            padding-top: 10rem;
+        }
+       
+        #what-we-think-youll-love{
+            text-align: left;
+        }
+
+        /* MCC modal specific rules */
+                
+        .modal .header {display: none;}
+        .modal a.challenge-home-link {display: none;}
+        .modal main{margin-top: 5px; padding-top: 15px;}
+        .modal .challenge-page-title.modal-title{
+            display: block;
+        }
+
+        .signup-card {
+            transition: transform 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            /*background-color: white;*/
+            text-align: center;
+        }
+        .gallery-tab-content {
+            display: none;
+            border: 0px !important;
+        }
+        
+        .nav-item {
+            border: 0px !important;
+        }
+        
+        .nav-link {
+            border: 0px !important;
+        }
+        
+        .gallery-tab-content.active {
+            display: block;
+        }
+        /* FCC rule
+        .modal-dialog-scrollable {
+            max-height: 50vh;
+            top: 60px;
+        }
+            */
+        /*     MCC rules below      */
+        .modal-dialog-scrollable {
+            height: calc(100vh - 2rem);
+            max-height: calc(80vh - 2rem);
+            margin-top: 9rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-dialog-scrollable .modal-content {
+            max-height: 100%;
+        }
+
+
+        /* Responsive modal shell */
+.modal-dialog {
+    width: calc(100% - 2rem);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .modal-dialog {
+        width: calc(100% - 1rem);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-dialog-scrollable {
+        height: calc(100vh - 1rem);
+        max-height: calc(100vh - 1rem);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
+  /*     MCC rules above      */
+        .scrolling-wrapper {
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 20px 0;
+        }
+        .scrolling-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+        .challenges-container {
+            position: relative;
+        }
+        .arrows-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .arrow-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #6f42c1;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+        .arrow-btn:hover {
+            color: #563d7c;
+        }
+        .arrow-btn:disabled {
+            color: #dee2e6;
+            cursor: not-allowed;
+        }
+        .rounded {
+            border-radius: 15px !important;
+        }
+        
+        
+        /* SAMPLE PROMPTS */
+        
+        .copy-button {
+            color: #111;
+            position: absolute;
+            top: 10px;
+            right: 5px;
+        }
+
+        .textToCopy {
+            width: 600px;
+            background-color: #ededed;
+            color: black;
+            font-family: "courier new", monospace;
+            padding: 10px 30px 10px 10px;
+            font-size: 1.0em;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .sample-prompt {
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }        
+        
+        
+        .stages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+
+        .stage {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            position: relative;
+            min-height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .stage-icon {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+            position: absolute;
+            left: -40px;    
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .stage-content {
+            flex-grow: 1;
+            /*padding-left: 60px;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 60px;            
+        }
+
+        .stage-title {
+            font-weight: bold;
+            margin: 0;
+            display: block;
+            margin-bottom: 4px;
+            font-family: Comfortaa, Lato, Rubik, sans-serif;
+        }
+
+        .stage-description {
+            margin: 0;
+            display: block;
+            line-height: 1.5;
+            font-family: Comfortaa, Lato, Rubik, sans-serif;
+        }
+
+        /* Stage-specific background colors 
+        .recognize { background-color: #F3E8FF; }
+        .investigate { background-color: #FFE4CC; }
+        .supercharge { background-color: #DCFCE7; }
+        .exchange { background-color: #DBEAFE; }
+        */
+
+        /* MCC stage-specific colors  */
+        .recognize {
+            background-color: #CDD5D7;
+            color: #001140;
+        }
+
+        .investigate {
+            background-color: #004B8D;
+            color: #FFFFFF;
+        }
+
+        .supercharge {
+            background-color: #F5CA00;
+            color: #001140;
+        }
+
+        .exchange {
+            background-color: #001140;
+            color: #FFFFFF;
+        }
+
+       /* Challenge Cards Grid Layout  - FCC roles*/
+      /*  .challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        */
+
+        /* MCC responsive challenge card grid    */
+
+        .challenge-grid {
+           display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr;
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+     /*  keeps Card 10 centered  */
+        .challenge-grid > .challenge-item:last-child {
+                grid-column: 1 / -1;
+                justify-self: center;
+            }
+            /*     MCC Cards are within anchor tags    */
+            a.challenge-card-link {
+                display: block;
+                height: 100%;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            a.challenge-card-link:hover {
+                text-decoration: none;
+            }
+
+            a.challenge-card-link:focus-visible {
+                outline: 3px solid currentColor;
+                outline-offset: 4px;
+            }
+        .card {
+            border-radius: 15px !important;
+        }
+        
+        /* Card styling 
+        .challenge-card {
+            height: 100%;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        */
+/* MCC rules for card size */
+        .challenge-item {
+            border-radius: 15px !important;
+            max-width: 280px;
+            width: 100%;
+            justify-self: center;
+            height: 100%;
+            }
+        .challenge-card{
+            height: 100%;
+             position: relative;
+               border-radius: 15px;
+         overflow: hidden;
+        }
+        .challenge-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        /*   MCC rules for button triggers added to the cards  */
+        .challenge-card-trigger {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .challenge-card:focus-within {
+            outline: 3px solid #005ea8;
+            outline-offset: 3px;
+        }
+        
+        /*.card-img-container {*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    height: 120px;*/
+        /*    padding-top: 15px;*/
+        /*}*/
+        
+        /*.card-img {*/
+        /*    max-height: 100px;*/
+        /*    max-width: 100%;*/
+        /*}*/
+        
+        .card-title {
+            font-family: Comfortaa, Lato, Rubik, sans-serif;
+            font-weight: 600;
+        }
+        
+        .badge {
+            font-weight: normal;
+            padding: 5px 10px;
+        }
+        /*
+        FCC rules
+        .card-img-DRG: {
+            border-radius: 15px !important;
+            border: 44px solid black !important;
+        }
+*/
+/*     MCC rules for card image   */
+        .card-img-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .card-img-DRG {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*   MCC disclaimer rules  */
+        .ai-disclaimer {
+            margin: 1rem auto; 
+            max-width: 70rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            background: #fff;
+            text-align: left;
+        }
+
+        .ai-disclaimer summary {
+           
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .disclaimer-content {
+            padding: 0 1rem 1rem;
+        }
+
+       /* Semantic list container for Challenge cards */
+ul.challenge-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Semantic list styling for the four AI Stages */
+    ul.stages-container {
+        list-style: none;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+}
+    
+    .back-to-top::before {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: currentColor;
+        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 19V5 M5 12l7-7 7 7' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 19V5 M5 12l7-7 7 7' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+    }
+    
+    /* Responsive breakpoints - FCC rules */
+        /*
+        @media (min-width: 576px) {
+            .challenge-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .challenge-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .challenge-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+            
+
+*/
+/*     MCC grid breakpoints    */
+       @media (max-width: 992px) {
+    .challenge-grid {
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .challenge-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+           
+           /* removing for MCC logo styling, 
+            .header-logo {
+                margin: 10px;
+                padding-top: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+               background-color: #004B8D;
+                border-radius: 0px;
+                height: 70px;
+                width: 100%;  
+                 }          
+             */
+            .header-text {
+                font-family: Comfortaa, sans-serif;
+                font-size: 3em;
+                display: none;
+            }
+            
+            
+            .stages-container {
+                width: 100%;
+                margin-top: 30px;
+            }
+            
+            .stage {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+                padding-top: 50px; /* Make room for the icon */
+                min-height: auto;
+            }
+
+            .stage-icon {
+                width: 70px;
+                height: 70px;
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .stage-content {
+                padding-left: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .stage-title {
+                text-align: center;
+            }
+
+            .stage-description {
+                text-align: center;
+            }
+
+     

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accessible Navigation Cards | Portfolio Demonstration</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" referrerpolicy="no-referrer" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+<link href="images/favicon.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="./styles/styles.css" rel="stylesheet"/>
+<!-- Remove default list styling while preserving the existing CSS grid layout. -->
+<style>
+      ul.challenge-grid {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .challenge-grid > .challenge-item {
+        min-width: 0;
+      }
+    
+      /* Minimal demo-only layout; original card styling remains in styles/styles.css. */
+      .portfolio-demo-intro { max-width: 54rem; margin: 2rem auto 0; padding: 0 1rem; }
+      .portfolio-demo-intro p { line-height: 1.6; }
+      .portfolio-demo-note { font-size: 0.95rem; }
+      .portfolio-demo-footer { margin: 2rem auto; padding: 0 1rem 2rem; max-width: 54rem; }
+      .demo-notice { max-width: 44rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.65; }
+      .demo-notice h1 { margin-bottom: 1.5rem; }
+      a:focus-visible { outline: 3px solid #1155cc; outline-offset: 4px; }
+    </style>
+</link></head>
+<body>
+<main class="main-container">
+  <div class="portfolio-demo-intro">
+    <h1>Accessible Navigation Cards — Live Demonstration</h1>
+    <p>This standalone portfolio demonstration reproduces the accessible navigation cards from the AI Learning Journey project. It is an independent showcase of the remediated interface, not the live course website.</p>
+    <p class="portfolio-demo-note">To test the cards, use Tab and Shift+Tab to move between links and Enter to activate one. You can also explore the card names and descriptions using a screen reader. All ten cards link to the same explanatory page for demonstration purposes.</p>
+  </div>
+  <section class="py-5" aria-labelledby="demo-challenges-heading">
+    <div class="container">
+      <h2 id="demo-challenges-heading" class="text-center mb-5 h1-DRG">AI Challenges</h2>
+      <p class="lead text-muted text-center">Select a card to try its navigation behavior</p>
+      <ul class="challenge-grid">
+<!-- Challenge 1 -->
+<li class="challenge-item">
+<a aria-describedby="challenge01-description challenge01-stage" aria-labelledby="challenge01-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card1.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge01-title">
+                Challenge 1:<br/>
+                What <em>is</em> AI?
+            </h3>
+<p class="card-text" id="challenge01-description">
+                Learn about AI, create an account at some popular AI services,
+                and have some fun!
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge01-stage">
+                Stage: Recognize
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 2 -->
+<li class="challenge-item">
+<a aria-describedby="challenge02-description challenge02-stage" aria-labelledby="challenge02-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card2.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge02-title">
+                Challenge 2:<br/>
+                AI or Not?
+            </h3>
+<p class="card-text" id="challenge02-description">
+                Can you tell what was created by a human and what was
+                created by AI?
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge02-stage">
+                Stage: Recognize
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 3 -->
+<li class="challenge-item">
+<a aria-describedby="challenge03-description challenge03-stage" aria-labelledby="challenge03-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card3.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge03-title">
+                Challenge 3:<br/>
+                Prompt Refinement
+            </h3>
+<p class="card-text" id="challenge03-description">
+                See what a difference a well-crafted prompt can make.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge03-stage">
+                Stage: Recognize
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 4 -->
+<li class="challenge-item">
+<a aria-describedby="challenge04-description challenge04-stage" aria-labelledby="challenge04-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card4.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge04-title">
+                Challenge 4:<br/>
+                Imagine Images
+            </h3>
+<p class="card-text" id="challenge04-description">
+                Create customized images - and convert a photo of yourself
+                into a cartoon!
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge04-stage">
+                Stage: Investigate
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 5 -->
+<li class="challenge-item">
+<a aria-describedby="challenge05-description challenge05-stage" aria-labelledby="challenge05-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card5.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge05-title">
+                Challenge 5:<br/>
+                AI as a Writing Coach
+            </h3>
+<p class="card-text" id="challenge05-description">
+                Use AI to get feedback on your draft and explore
+                different perspectives.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge05-stage">
+                Stage: Investigate
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 6 -->
+<li class="challenge-item">
+<a aria-describedby="challenge06-description challenge06-stage" aria-labelledby="challenge06-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card6.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge06-title">
+                Challenge 6:<br/>
+                Document Summarization
+            </h3>
+<p class="card-text" id="challenge06-description">
+                Upload documents to AI and gain nuanced insight.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge06-stage">
+                Stage: Supercharge
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 7 -->
+<li class="challenge-item">
+<a aria-describedby="challenge07-description challenge07-stage" aria-labelledby="challenge07-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card7.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge07-title">
+                Challenge 7:<br/>
+                NotebookLM
+            </h3>
+<p class="card-text" id="challenge07-description">
+                Supercharge your research, knowledge base, and projects.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge07-stage">
+                Stage: Supercharge
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 8 -->
+<li class="challenge-item">
+<a aria-describedby="challenge08-description challenge08-stage" aria-labelledby="challenge08-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card8.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge08-title">
+                Challenge 8:<br/>
+                "Voice Mode"
+            </h3>
+<p class="card-text" id="challenge08-description">
+                Have an audible conversation with AI.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge08-stage">
+                Stage: Supercharge
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 9 -->
+<li class="challenge-item">
+<a aria-describedby="challenge09-description challenge09-stage" aria-labelledby="challenge09-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card9.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge09-title">
+                Challenge 9:<br/>
+                Crafting Prompts
+            </h3>
+<p class="card-text" id="challenge09-description">
+                Level-up your prompting with a detailed framework.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge09-stage">
+                Stage: Supercharge
+            </span>
+</div>
+</a>
+</li>
+<!-- Challenge 10 -->
+<li class="challenge-item">
+<a aria-describedby="challenge10-description challenge10-stage" aria-labelledby="challenge10-title" class="card challenge-card challenge-card-link" href="demo-destination.html">
+<div class="card-img-container">
+<img alt="" class="card-img-DRG" src="images/mcc-card-images/card10.png"/>
+</div>
+<div class="card-body text-center">
+<h3 class="card-title" id="challenge10-title">
+                Challenge 10:<br/>
+                Vibe Coding
+            </h3>
+<p class="card-text" id="challenge10-description">
+                Think you'll never be able to make that app you dream of?
+                Think again. Let AI build your ideas.
+            </p>
+<span class="badge rounded-pill bg-light text-dark" id="challenge10-stage">
+                Stage: Exchange
+            </span>
+</div>
+</a>
+</li>
+
+
+</ul>
+    </div>
+  </section>
+  <div class="portfolio-demo-footer">
+    <p><strong>Portfolio demonstration only.</strong> The original cards link to individual AI Challenge activities. This version uses a common destination so the navigation interaction can be tested without leaving the demo.</p>
+  </div>
+</main>
+</body>
+</html>

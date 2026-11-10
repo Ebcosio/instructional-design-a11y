@@ -1,0 +1,50 @@
+/* Supplemental cleanup rules for Challenge 1.
+   Merge into challenge_styles.css once tested, then remove this extra stylesheet. */
+
+.challenge-navigation {
+   text-align: right;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-main .challenge-section-title {
+  margin-block: 1.75rem 1rem;
+}
+
+.challenge-main hr {
+  margin-block: 2rem;
+}
+
+.challenge-video {
+   max-width: 650px;
+    margin: 1.5rem auto;
+}
+
+.ai-service {
+  margin-block: 1.75rem;
+}
+
+  .ai-service-logo {
+    width: auto;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+
+.challenge-main pre {
+  margin-block: 1rem 1.5rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.challenge-example-image {
+    max-width: 650px;
+    height: auto;
+}
+
+.challenge-instruction {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #0046AD;
+    line-height: 1.6;
+}
