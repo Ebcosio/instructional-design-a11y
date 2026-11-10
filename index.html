@@ -1,70 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designing a Start Here Section for Your Online Course</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eric Cosio's work in digital accessibility, accessible web development, instructional design, and eLearning.">
+  <title>Eric Cosio | Digital Accessibility &amp; Instructional Design</title>
+  <style>
+    :root { color-scheme: light; --ink:#192b40; --muted:#44556a; --accent:#124c80; --accent-dark:#0b355c; --line:#c5d0db; --soft:#f1f5f8; --focus:#a74400; }
+    *,*::before,*::after {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0;background:#fff;color:var(--ink);font:1.05rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .skip-link {position:absolute;left:1rem;top:-5rem;padding:.65rem 1rem;background:#fff;color:var(--accent-dark);z-index:10;border:2px solid var(--accent-dark)}
+    .skip-link:focus {top:1rem}
+    a {color:var(--accent);text-underline-offset:.16em}
+    a:hover {color:var(--accent-dark)}
+    a:focus-visible {outline:3px solid var(--focus);outline-offset:4px;border-radius:2px}
+    .wrap {width:min(100% - 2.5rem, 880px);margin-inline:auto}
+    header {border-bottom:1px solid var(--line)}
+    header .wrap {padding:1.1rem 0}
+    .site-label {font-weight:750;letter-spacing:.01em}
+    main {padding:clamp(2.5rem,7vw,5rem) 0 4rem}
+    .eyebrow {text-transform:uppercase;letter-spacing:.11em;color:var(--accent);font-weight:750;font-size:.78rem;margin:0 0 .8rem}
+    h1 {font-size:clamp(2rem,5vw,3.3rem);line-height:1.13;letter-spacing:-.035em;max-width:16ch;margin:0 0 1.1rem}
+    .lead {font-size:clamp(1.1rem,2.2vw,1.25rem);max-width:68ch;color:var(--muted);margin:0 0 1.75rem}
+    .primary-link {display:inline-block;background:var(--accent);color:#fff;padding:.85rem 1.35rem;border:2px solid var(--accent);border-radius:.45rem;font-weight:750;text-decoration:none}
+    .primary-link:hover {background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
+    .primary-link:focus-visible {outline:3px solid var(--focus);outline-offset:4px}
+    .note {margin:.9rem 0 0;color:var(--muted);font-size:.92rem}
+    section {margin-top:3.1rem}
+    h2 {font-size:1.35rem;line-height:1.3;margin:0 0 .75rem}
+    p {margin:.65rem 0 0}
+    .credentials {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem;margin-top:1.2rem}
+    .credential {border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:.4rem;padding:1.1rem 1.2rem;background:var(--soft)}
+    .credential h3 {font-size:1.06rem;line-height:1.4;margin:0 0 .3rem}
+    .credential p {font-size:.94rem;color:var(--muted);margin:0}
+    .credential .verification {margin-top:.7rem}
+    footer {border-top:1px solid var(--line);padding:1.35rem 0 2rem;color:var(--muted);font-size:.9rem}
+    footer p {margin:0}
+    @media (prefers-reduced-motion:reduce) {html {scroll-behavior:auto}}
+  </style>
 </head>
 <body>
-    <div id="wrapper">
-    <h1>Designing a Start Here Section for Your Online Course</h1>
-    <img src="./images/odu_global_logo.svg" alt="ODUGlobal Logo" width="253" height="65">
-     <img src="./images/canvas_banner1.png">
-        <h2 style="color: crimson;">GitHub Pages Example</h2>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="wrap"><div class="site-label">Eric Cosio</div></div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="eyebrow">Digital accessibility · Instructional design · eLearning</p>
+    <h1>Accessible experiences, thoughtfully designed.</h1>
+    <p class="lead">I'm Eric Cosio, an instructional design and digital accessibility professional with experience in higher education, accessible web development, and online learning. My work includes accessibility evaluation and remediation, interactive learning activities, and practical solutions that make digital content easier to use.</p>
+    <a class="primary-link" href="https://sites.google.com/view/ecosio-elearning-portfolio/home">Explore my work and portfolio</a>
+    <p class="note">My primary portfolio is hosted on Google Sites and features project examples, explanations, and demonstrations.</p>
 
-        <p style="color: crimson;">Below is simple, static HTML content.  This could potentially be tranferred into Canvas. </p>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About my work</h2>
+      <p>I combine technical accessibility skills with instructional design experience to create and improve digital learning experiences. My projects include evaluating interfaces against WCAG, remediating HTML and interactive components, developing accessible instructional resources, and collaborating with educators and developers.</p>
+    </section>
 
-        <a href="./scorm_cyse/story.html" target="_blank">SCORM Example (CYSE 201)</a>
-        
-    <p>In a face-to-face course, instructors often spend part of the first-class meeting going over the syllabus and class policies with students. Creating a designated Start Here area in your online course is like this. This is a place where you can include the most important information that students need to know to get off to a good start in your course. A Start Here area also allows you to emphasize things that are important for this course or expectations that you have for how students will interact with the content, each other, and you.</p>
+    <section aria-labelledby="credentials-heading">
+      <h2 id="credentials-heading">Professional accessibility credentials</h2>
+      <div class="credentials">
+        <article class="credential">
+          <h3>IAAP Certified Professional in Web Accessibility (CPWA)</h3>
+          <p>International Association of Accessibility Professionals · 2024</p>
+          <!-- Add your own public Credly verification link here once confirmed, e.g.:
+          <p class="verification"><a href="YOUR_EXACT_CPWA_CREDLY_PUBLIC_URL">Verify CPWA credential on Credly</a></p>
+          -->
+        </article>
+        <article class="credential">
+          <h3>IAAP Accessible Document Specialist (ADS)</h3>
+          <p>International Association of Accessibility Professionals · 2024</p>
+          <!-- Add your own public Credly verification link here once confirmed, e.g.:
+          <p class="verification"><a href="YOUR_EXACT_ADS_CREDLY_PUBLIC_URL">Verify ADS credential on Credly</a></p>
+          -->
+        </article>
+      </div>
+    </section>
 
-    <p>How much information you include in the Start Here section is up to you as an instructor. At the minimum, though, we recommend including:</p>
-    
-    <ul>
-        <li>A short welcome statement along with instructor contact information;</li>
-        <li>Information on where to obtain technical support and the required technologies and technical skills needed to be successful in the course;</li>
-        <li>An explanation of netiquette and online interaction expectations;</li>
-        <li>Instructions to read the syllabus and calendar;</li>
-        <li>Instructions for students to introduce themselves; and</li>
-        <li>What students should do next to get started in the course.</li>
-    </ul>
-
-    <p>Let’s look a little more closely at each of these areas.</p>
-
-    <h2>Welcome and Contact Information</h2>
-    <p>A welcome statement can set the tone for a course, and there are a variety of approaches that you can take to constructing this statement. For example, you could create a welcome that also includes your self-introduction, or you could just post a short welcome here and then place your self-introduction in the discussion forum. Whatever your personal style, the main goal is to communicate:</p>
-    
-    <ul>
-        <li>A tone that will help set the climate for the class,</li>
-        <li>Information on how you prefer to be contacted, and</li>
-        <li>When students can expect to hear back from you.</li>
-    </ul>
-
-    <p>Keep in mind that communicating online is quite different from face-to-face. The facial expressions and tone of voice that we often depend upon in our face-to-face interactions are completely absent here. A friendly tone in your welcome can help relieve student anxieties and start the course off well.</p>
-
-    <p>For your contact information, consider how you prefer students get in touch with you. Do you want them to email you directly or message you via another means such as the learning management system? Do you want them to call you on your office phone, or will you give your cell phone number out? Many instructors create a FAQ (Frequently Asked Questions) discussion forum where certain questions are pre-answered or where students can ask general questions. If you do this in your course, then the welcome statement at the beginning of the course is a great place to tell students about the forum and guide them in how to use it.</p>
-
-    <p>Additionally, let students know what your typical turnaround time is for answering emails or phone calls. Here, the turnaround time you choose is not as important as letting them know what to expect. For example, many instructors need time over the weekend to recharge or complete grading, so they let their students know that they will not be answering emails or phone calls during the weekends. Use this opportunity in the course to help set clear expectations.</p>
-       
-<hr/>
-      <p style="color: crimson;">However, with GitHub Pages, you can also support dynamic content, as in this very simple example, a simple script that counts the
-      number of times a button is clicked. Canvas won't support adding any executable code, such as JavaScript tags, into a page.</p>
-
-     <button id="btn">Click Here!</button>
-    <p>
-        Button Clicked <span id="display">0</span> Times
-    </p>
-    <script type="text/javascript">
-        let count = 0;
-        let btn = document.getElementById("btn");
-        let disp = document.getElementById("display");
-         
-        btn.onclick = function () {
-                    count++;
-        disp.innerHTML = count;
-        }
-    </script>
- </div>
+    <section aria-labelledby="next-heading">
+      <h2 id="next-heading">See examples of my work</h2>
+      <p>For selected projects in accessible web components, instructional design, and educational technology, please visit my full portfolio.</p>
+      <p><a href="https://sites.google.com/view/ecosio-elearning-portfolio/home">Visit Eric Cosio's full portfolio</a></p>
+    </section>
+  </main>
+  <footer><div class="wrap"><p>Independent professional portfolio landing page · Eric Cosio</p></div></footer>
 </body>
 </html>
