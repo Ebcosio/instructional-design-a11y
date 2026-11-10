@@ -461,7 +461,17 @@
             font-family: Comfortaa, Lato, Rubik, sans-serif;
             font-weight: 600;
         }
+        /* Unvisited card */
+        a.challenge-card-link:link {
+            background-color: #ffffff;
+            border-color: #dee2e6;
+        }
         
+        /* Visited card */
+        a.challenge-card-link:visited {
+            background-color: #e9edf5;
+            border-color: #8899b3;
+        }
         .badge {
             font-weight: normal;
             padding: 5px 10px;
