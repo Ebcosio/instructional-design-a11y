@@ -397,6 +397,19 @@
                 outline: 3px solid currentColor;
                 outline-offset: 4px;
             }
+        /* Unvisited challenge cards */
+           a.challenge-card-link:link {
+               background-color: #ffffff;
+               border-color: #dee2e6;
+               color: #212529;
+           }
+           
+           /* Visited challenge cards */
+           a.challenge-card-link:visited {
+               background-color: #e9edf5;
+               border-color: #8899b3;
+               color: #344c70;
+           }
         .card {
             border-radius: 15px !important;
         }
@@ -461,17 +474,8 @@
             font-family: Comfortaa, Lato, Rubik, sans-serif;
             font-weight: 600;
         }
-        /* Unvisited card */
-        a.challenge-card-link:link {
-            background-color: #ffffff;
-            border-color: #dee2e6;
-        }
-        
-        /* Visited card */
-        a.challenge-card-link:visited {
-            background-color: #e9edf5;
-            border-color: #8899b3;
-        }
+   
+      
         .badge {
             font-weight: normal;
             padding: 5px 10px;
